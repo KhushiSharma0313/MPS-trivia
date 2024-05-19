@@ -45,8 +45,13 @@ body.dark-theme h1 {
     color: #f0f0f0;
 }
 
+#question {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
 .btn {
-    background: #66c084;
+    background: #18099e;
     border: none;
     border-radius: 8px;
     color: white;
@@ -63,11 +68,11 @@ body.dark-theme h1 {
 }
 
 body.dark-theme .btn {
-    background: #ff6f61;
+    background: #b9198f;
 }
 
 body.dark-theme .btn:hover {
-    background: #e55b4a;
+    background: #da67b6;
 }
 
 .btn:active {
@@ -91,12 +96,12 @@ body.dark-theme .btn:hover {
 
 .correct {
     background-color: #4caf50 !important;
-    color: white;
+
 }
 
 .wrong {
     background-color: #f44336 !important;
-    color: white;
+ 
 }
 
 .controls {
@@ -116,8 +121,7 @@ body.dark-theme .btn:hover {
 }
 
 #theme-btn {
-    position:fixed;
-    align-content: center;
+    position: fixed;
     top: 20px;
     right: 20px;
     background: #ffde3b;
@@ -137,4 +141,28 @@ body.dark-theme #theme-btn {
 
 #theme-btn:active {
     transform: translateY(0);
+}
+
+#fact-container {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+}
+
+body.dark-theme #fact-container {
+    color: white; 
+}
+
+#fact-container.highlight {
+    opacity: 1;
+}
+
+#fact {
+    font-weight: bold;
+}
+
+#source {
+    font-style: italic;
 }
