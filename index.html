@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPS Trivia Game</title>
+    <title>Trivia Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>MPS Trivia Game</h1>
-        <div id="score" class="score">Score: 0</div>
-        <div id="timer" class="timer">Time left: 10s</div>
         <div id="question-container" class="hide">
-            <div id="question">Question text</div>
+            <div id="question">Question Text</div>
             <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        <div id="fact-container" class="hide">
+            <div id="fact"></div>
+            <div id="source"></div>
         </div>
         <div class="controls">
             <button id="start-btn" class="btn">Start</button>
             <button id="next-btn" class="btn hide">Next</button>
         </div>
-        <button id="theme-btn" class="btn">Switch Theme</button>
+        <div id="theme-btn" class="btn">Switch Theme</div>
+        <div class="timer" id="timer">Time left: 15s</div>
+        <div class="score" id="score">Score: 0</div>
     </div>
     <script src="scripts.js"></script>
 </body>
